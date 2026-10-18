@@ -15,6 +15,9 @@
 #include <vector>
 
 #include "opencv2/opencv.hpp"
+#if __has_include(<opencv2/geometry.hpp>)
+#include "opencv2/geometry.hpp"
+#endif
 #include "cv_bridge/cv_bridge.hpp"
 
 #include "br2_tracking/ObjectDetector.hpp"
